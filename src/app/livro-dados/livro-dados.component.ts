@@ -1,0 +1,46 @@
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
+import { Livro } from '../livro';
+import { Editora } from '../editora';
+import { ControleEditoraService } from '../controle-editora.service';
+import { ControleLivrosService } from '../controle-livros.service';
+
+@Component({
+  selector: 'app-livro-dados',
+  templateUrl: './livro-dados.component.html',
+  styleUrls: ['./livro-dados.component.css']
+})
+export class LivroDadosComponent implements OnInit {
+
+  public livro: Livro = new Livro();
+  public autoresForm: string = '';
+  public editoras: Array<Editora> = [];
+
+  constructor(
+    private servEditora: ControleEditoraService,
+    private servLivros: ControleLivrosService,
+    private router: Router
+  ) {}
+
+  ngOnInit(): void {
+    this.editoras = this.servEditora.getEditoras();
+  }
+
+  incluir = (): void => {
+  // divide linhas, remove linhas vazias e trim
+  const autoresArr = this.autoresForm
+    .split(/\r?\n/)
+    .map(a => a.trim())
+    .filter(a => a.length > 0);
+
+  this.livro.autores = autoresArr;
+  this.servLivros.incluir(this.livro);
+
+  // opcional: reset do formulário/objeto
+  this.livro = new Livro();
+  this.autoresForm = '';
+
+  this.router.navigateByUrl('/lista');
+}
+}
