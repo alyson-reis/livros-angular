@@ -41,5 +41,3 @@ ng serve
 **3. Acesse o sistema**
 Abra no navegador:
 http://localhost:4200
-
-Lista carregada a partir de um vetor definido no serviço de editoras.
