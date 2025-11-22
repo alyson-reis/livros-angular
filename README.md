@@ -1,91 +1,50 @@
-📚 Projeto Livros Angular
+# 📚 Livros Angular (Versão Sem Banco de Dados)
 
-Este repositório contém o primeiro projeto livros-angular, desenvolvido sem integração com banco de dados, como parte das atividades da disciplina de programação. O objetivo é apresentar uma aplicação Angular simples para listagem, inclusão e manipulação de livros utilizando apenas dados locais.
+Este projeto é a primeira versão do sistema Livros, desenvolvido em Angular, utilizando apenas um vetor local como fonte de dados — ou seja, não há integração com servidor ou banco de dados.
 
-🚀 Tecnologias Utilizadas
+## 🚀 Tecnologias Utilizadas
 
-Angular (versão utilizada no projeto)
+- Angular
+- TypeScript
+- HTML
+- CSS
 
-TypeScript
+## 📁 Estrutura Geral do Projeto
 
-HTML
+O projeto é composto por:
+LivroListaComponent → Exibe a lista de livros existentes
+LivroDadosComponent → Formulário para cadastrar um novo livro
+ControleLivrosService → Serviço responsável por manipular o vetor de livros
+ControleEditoraService → Serviço para listar e obter nomes das editoras
+livro.ts → Modelo da classe Livro
+(Outros arquivos padrão do Angular
 
-CSS
+## 📚 Funcionalidades
 
-🎯 Objetivo do Projeto
+Listar livros
 
-O projeto foi criado com o propósito de:
+Mostra todos os livros cadastrados no vetor local.
 
-Praticar os fundamentos do Angular.
+✔ Incluir livro
 
-Entender a estrutura de componentes, serviços e módulos.
+Adiciona um novo livro preenchendo o formulário em /dados.
 
-Trabalhar com rotas, templates e formulários.
+✔ Excluir livro
 
-Simular operações de CRUD utilizando dados locais, sem backend.
+Remove um livro diretamente na lista.
 
-📁 Estrutura Básica do Projeto
-
-A estrutura principal contém:
-
-src/
- ├── app/
- │    ├── livro.ts                    # Modelo Livro
- │    ├── controle-editora.service.ts # Serviço de Editoras
- │    ├── controle-livros.service.ts  # Serviço de Livros
- │    ├── livro-lista/                # Componente lista de livros
- │    └── livro-dados/                # Componente formulário de livro
- └── ...
-🧩 Funcionalidades
-✔ Listar livros
-
-Exibe uma lista pré-carregada de livros mantidos no serviço ControleLivrosService.
-
-✔ Cadastrar novo livro
-
-Permite adicionar novos livros utilizando um formulário simples.
-
-✔ Listar editoras
-
-As editoras são carregadas a partir do ControleEditoraService.
-
-✔ Navegação via rotas
-
-Uso de rotas para alternar entre lista e formulário.
-
-▶ Como Executar o Projeto
-
-Instalar dependências:
-
+1. Instale as dependências
 npm install
 
-Rodar o servidor de desenvolvimento:
+2. Rode o servidor Angular
+ng serve
 
-ng serve -o
+3. Acesse o sistema
 
-Acessar no navegador:
+Abra no navegador:
 
-http://localhost:4200/
-💡 Observações
+http://localhost:4200
 
-Este projeto não utiliza banco de dados.
+✔ Seleção de editora
 
-Todos os dados são armazenados localmente dentro dos serviços.
-
-O objetivo é apenas fins acadêmicos e de aprendizado.
-
-📘 Próximos Passos (Opcional)
-
-Caso deseje evoluir o projeto:
-
-Adicionar integração com backend (como feito na segunda versão).
-
-Migrar para API em Express + MongoDB.
-
-Melhorar design com Angular Material.
-
-Criar validações mais avançadas nos formulários.
-
-👨‍🏫 Autor
-
-Projeto desenvolvido como parte das atividades de aprendizagem, com foco em compreender a estrutura e funcionamento básico do Angular.
+Lista carregada a partir de um vetor definido no serviço de editoras.
