@@ -28,7 +28,6 @@ export class LivroDadosComponent implements OnInit {
   }
 
   incluir = (): void => {
-  // divide linhas, remove linhas vazias e trim
   const autoresArr = this.autoresForm
     .split(/\r?\n/)
     .map(a => a.trim())
@@ -37,7 +36,6 @@ export class LivroDadosComponent implements OnInit {
   this.livro.autores = autoresArr;
   this.servLivros.incluir(this.livro);
 
-  // opcional: reset do formulário/objeto
   this.livro = new Livro();
   this.autoresForm = '';
 

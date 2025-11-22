@@ -10,25 +10,12 @@ export class ControleLivrosService {
     {
       codigo: 1,
       codEditora: 1,
-      titulo: 'O Peregrino',
-      resumo: 'Um clássico da literatura cristã.',
-      autores: ['John Bunyan']
+      titulo: 'A cruz de Cristo',
+      resumo: 'Um estudo criterioso da fé cristã',
+      autores: ['John Stott']
       
     },
-    {
-      codigo: 2,
-      codEditora: 2,
-      titulo: 'A Cruz e o Punhal',
-      resumo: 'A história de David Wilkerson e sua missão nas gangues de NY.',
-      autores: ['David Wilkerson']
-    },
-    {
-      codigo: 3,
-      codEditora: 3,
-      titulo: 'Em Seus Passos O Que Faria Jesus?',
-      resumo: 'A obra que originou o movimento WWJD.',
-      autores: ['Charles Sheldon']
-    }
+    
   ];
 
   obterLivros(): Array<Livro> {
@@ -42,7 +29,7 @@ incluir(livro: Livro): void {
   }
   livro.codigo = novoCodigo;
 
-  // Salva uma cópia para evitar referências vivas
+
   const copia: Livro = {
     codigo: livro.codigo,
     codEditora: livro.codEditora,
