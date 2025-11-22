@@ -11,12 +11,12 @@ export class ControleLivrosService {
       codigo: 1,
       codEditora: 1,
       titulo: 'A cruz de Cristo',
-      resumo: 'Considerada um clássico moderno, esta obra combina exposição bíblica excelente, estudo criterioso da fé cristã e o chamado urgente para uma vida ao pé da cruz.',
+      resumo: 'Considerada um clássico moderno, esta obra combina exposição bíblica excelente,estudo criterioso da fé cristã e o chamado urgente para uma vida ao pé da cruz.',
       autores: ['John Stott']
     },
     {
       codigo: 2,
-      codEditora: 2,
+      codEditora: 3,
       titulo: 'Cristianismo Puro e Simples',
       resumo: 'C.S. Lewis foi convidado pela BBC a fazer uma série de palestras pelo rádio com o intuito de explicar bases da fé cristã de forma simples e clara. Mais tarde, ajustado pelo próprio Lewis, esse material daria origem a Cristianismo puro e simples , um grande clássico da literatura cristã.',
       autores: ['C. S. Lewis']
