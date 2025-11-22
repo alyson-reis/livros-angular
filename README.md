@@ -1,6 +1,6 @@
 # 📚 Livros Angular (Versão Sem Banco de Dados)
 
-Este projeto é a primeira versão do sistema Livros, desenvolvido em Angular, utilizando apenas um vetor local como fonte de dados — ou seja, não há integração com servidor ou banco de dados.
+* Este projeto é a primeira versão do sistema Livros, desenvolvido em Angular, utilizando apenas um vetor local como fonte de dados — ou seja, não há integração com servidor ou banco de dados. *
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -12,37 +12,34 @@ Este projeto é a primeira versão do sistema Livros, desenvolvido em Angular, u
 ## 📁 Estrutura Geral do Projeto
 
 O projeto é composto por:
-LivroListaComponent → Exibe a lista de livros existentes
-LivroDadosComponent → Formulário para cadastrar um novo livro
-ControleLivrosService → Serviço responsável por manipular o vetor de livros
-ControleEditoraService → Serviço para listar e obter nomes das editoras
-livro.ts → Modelo da classe Livro
-(Outros arquivos padrão do Angular
+- LivroListaComponent → Exibe a lista de livros existentes
+- LivroDadosComponent → Formulário para cadastrar um novo livro
+- ControleLivrosService → Serviço responsável por manipular o vetor de livros
+- ControleEditoraService → Serviço para listar e obter nomes das editoras
+- livro.ts → Modelo da classe Livro
+- (Outros arquivos padrão do Angular)
 
 ## 📚 Funcionalidades
 
-Listar livros
-
+*Listar livros*
 Mostra todos os livros cadastrados no vetor local.
 
-✔ Incluir livro
-
+*Incluir livro*
 Adiciona um novo livro preenchendo o formulário em /dados.
 
-✔ Excluir livro
-
+*Excluir livro*
 Remove um livro diretamente na lista.
 
-1. Instale as dependências
+## Como Executar o Projeto
+
+*1. Instale as dependências*
 npm install
 
-2. Rode o servidor Angular
+*2. Rode o servidor Angular*
 ng serve
 
-3. Acesse o sistema
-
+*3. Acesse o sistema*
 Abra no navegador:
-
 http://localhost:4200
 
 ✔ Seleção de editora
