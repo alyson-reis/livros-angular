@@ -1,27 +1,91 @@
-# LivrosAngular
+📚 Projeto Livros Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+Este repositório contém o primeiro projeto livros-angular, desenvolvido sem integração com banco de dados, como parte das atividades da disciplina de programação. O objetivo é apresentar uma aplicação Angular simples para listagem, inclusão e manipulação de livros utilizando apenas dados locais.
 
-## Development server
+🚀 Tecnologias Utilizadas
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Angular (versão utilizada no projeto)
 
-## Code scaffolding
+TypeScript
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+HTML
 
-## Build
+CSS
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+🎯 Objetivo do Projeto
 
-## Running unit tests
+O projeto foi criado com o propósito de:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Praticar os fundamentos do Angular.
 
-## Running end-to-end tests
+Entender a estrutura de componentes, serviços e módulos.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Trabalhar com rotas, templates e formulários.
 
-## Further help
+Simular operações de CRUD utilizando dados locais, sem backend.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+📁 Estrutura Básica do Projeto
+
+A estrutura principal contém:
+
+src/
+ ├── app/
+ │    ├── livro.ts                    # Modelo Livro
+ │    ├── controle-editora.service.ts # Serviço de Editoras
+ │    ├── controle-livros.service.ts  # Serviço de Livros
+ │    ├── livro-lista/                # Componente lista de livros
+ │    └── livro-dados/                # Componente formulário de livro
+ └── ...
+🧩 Funcionalidades
+✔ Listar livros
+
+Exibe uma lista pré-carregada de livros mantidos no serviço ControleLivrosService.
+
+✔ Cadastrar novo livro
+
+Permite adicionar novos livros utilizando um formulário simples.
+
+✔ Listar editoras
+
+As editoras são carregadas a partir do ControleEditoraService.
+
+✔ Navegação via rotas
+
+Uso de rotas para alternar entre lista e formulário.
+
+▶ Como Executar o Projeto
+
+Instalar dependências:
+
+npm install
+
+Rodar o servidor de desenvolvimento:
+
+ng serve -o
+
+Acessar no navegador:
+
+http://localhost:4200/
+💡 Observações
+
+Este projeto não utiliza banco de dados.
+
+Todos os dados são armazenados localmente dentro dos serviços.
+
+O objetivo é apenas fins acadêmicos e de aprendizado.
+
+📘 Próximos Passos (Opcional)
+
+Caso deseje evoluir o projeto:
+
+Adicionar integração com backend (como feito na segunda versão).
+
+Migrar para API em Express + MongoDB.
+
+Melhorar design com Angular Material.
+
+Criar validações mais avançadas nos formulários.
+
+👨‍🏫 Autor
+
+Projeto desenvolvido como parte das atividades de aprendizagem, com foco em compreender a estrutura e funcionamento básico do Angular.
